@@ -10,6 +10,7 @@ buildscript {
         logging_interceptor = '4.10.0'
         nav_version = '2.5.1'
         coroutine_version = '1.6.4'
+        timber_version = '5.0.1'
     }
     dependencies {
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"

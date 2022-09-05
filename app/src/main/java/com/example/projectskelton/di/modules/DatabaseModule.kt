@@ -2,6 +2,7 @@ package com.example.projectskelton.di.modules
 
 import android.content.Context
 import androidx.room.Room
+import com.example.projectskelton.data.database.MyDao
 import com.example.projectskelton.data.database.MyRoomDatabase
 import com.example.projectskelton.domain.util.Constants.Companion.DATABASE_NAME
 import dagger.Module
@@ -23,11 +24,11 @@ class DatabaseModule {
         ).fallbackToDestructiveMigration().build()
     }
 
-    /* @Singleton
-     @Provides
-     fun provideJokeDao(db: MyRoomDatabase): JokeDao {
-         return db.provideRandomDao()
-     }*/
+    @Singleton
+    @Provides
+    fun provideJokeDao(db: MyRoomDatabase): MyDao {
+        return db.provideDao()
+    }
 
 
 }

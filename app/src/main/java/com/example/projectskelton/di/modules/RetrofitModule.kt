@@ -1,6 +1,6 @@
 package com.example.projectskelton.di.modules
 
-import com.example.projectskelton.data.repository.ApiService
+import com.example.projectskelton.data.remote.ApiService
 import com.example.projectskelton.domain.util.Constants
 import dagger.Module
 import dagger.Provides

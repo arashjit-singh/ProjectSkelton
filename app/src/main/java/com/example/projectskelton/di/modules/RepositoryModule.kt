@@ -16,4 +16,5 @@ abstract class RepositoryModule {
     abstract fun bindStockRepository(
         stockRepositoryImpl: MyRepositoryImpl
     ): MyRepository
+
 }
